@@ -22,7 +22,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"username\": \"john_doe\",\n  \"password\": \"password123\"\n}"
+              "raw": "{\n  \"email\": \"john_doe@example.com\",\n  \"password\": \"password123\"\n}"
             },
             "url": {
               "raw": "{{base_url}}/api/auth/register",
@@ -50,7 +50,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"username\": \"Hammad\",\n  \"password\": \"password123\"\n}"
+              "raw": "{\n  \"email\": \"john_doe@example.com\",\n  \"password\": \"password123\"\n}"
             },
             "url": {
               "raw": "{{base_url}}/api/auth/login",
@@ -341,7 +341,12 @@
   "variable": [
     {
       "key": "base_url",
-      "value": "https://dev-squad26-week3day2-backend.vercel.app",
+      "value": "https://dev-squad26-week3-day2-backend.vercel.app",
+      "type": "string"
+    },
+    {
+      "key": "auth_token",
+      "value": "",
       "type": "string"
     }
   ]

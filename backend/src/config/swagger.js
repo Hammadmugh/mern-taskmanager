@@ -14,7 +14,7 @@ const options = {
     },
     servers: [
       {
-        url: "https://dev-squad26-week3day2-backend.vercel.app",
+        url: "https://dev-squad26-week3-day2-backend.vercel.app",
         description: "Production server",
       },
       {
@@ -38,9 +38,9 @@ const options = {
               type: "string",
               example: "507f1f77bcf86cd799439011",
             },
-            username: {
+            email: {
               type: "string",
-              example: "john_doe",
+              example: "john_doe@example.com",
             },
             password: {
               type: "string",
