@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors")
 const swaggerUi = require("swagger-ui-express");
 const swaggerSpec = require("./config/swagger");
 const errorHandler = require("../src/middlewares/errorHandler");
@@ -11,6 +12,7 @@ const app = express();
 dbConnect();
 
 // Middleware
+app.use(cors());
 app.use(express.json());
 
 // CORS Headers

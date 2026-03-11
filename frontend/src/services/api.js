@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create axios instance with base URL
 const api = axios.create({
-  baseURL: 'http://localhost:3001/api',
+  baseURL: 'https://dev-squad26-week3-day2-backend.vercel.app/api',
   headers: {
     'Content-Type': 'application/json',
   },
@@ -31,7 +31,7 @@ api.interceptors.request.use(
  * @returns {Promise} Response with success status and message
  */
 export const registerUser = (email, password) => {
-  return api.post('/auth/register', {
+  return api.post('auth/register', {
     email,
     password,
   });
@@ -44,7 +44,7 @@ export const registerUser = (email, password) => {
  * @returns {Promise} Response with JWT token
  */
 export const loginUser = (email, password) => {
-  return api.post('/auth/login', {
+  return api.post('auth/login', {
     email,
     password,
   });
